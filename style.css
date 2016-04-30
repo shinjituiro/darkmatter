@@ -1,0 +1,51 @@
+body {
+ font-family:"meiryo";
+}
+
+textarea{
+ font-size:20pt;
+ border-radius:5px;
+ border:solid 5px #1dd;
+ overflow:auto;
+}
+
+textarea:focus {
+ box-shadow: 0 0 5px #1dd;
+ border:solid 5px #1dd;
+}
+
+a.btn {
+  display: inline-block;
+  width: 200px;
+  margin: auto;
+  padding: 10px 10px;
+  border: 1px solid #222;
+  background: transparent;
+  color: #222;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  transition: .3s;
+ border-radius:5px;
+}
+
+a.btn_:hover {
+  background: #222;
+  color: #fff;
+}
+
+div.box {
+  width:600px;
+  margin:auto;
+  padding:10px;
+  solid black;
+  text-align:left;  
+}
+
+div.box2 {
+  width:600px;
+  margin:auto;
+  padding:10px;
+  solid black;
+  text-align:right;
+}
