@@ -28,13 +28,13 @@ function make(){
 
 function gen(data){
 	var array = "";
-	var l = 0;
+	var l = -1;
 	for(var i in data)l++;
 	for(var i = 0; i < 100; i++){
 	  	var rnd1 = Math.floor(Math.random()*l);
 	  	var rnd2 = Math.floor(Math.random()*l);
 	  	var no = Math.floor(Math.random()*4);
-	  	if(rnd1==rnd2)rnd2=(rnd2+1)%l;
+	  	if(rnd1==rnd2)rnd2=(rnd2+1)%(l+1);
 	  	if(no==0){
 	  		array += data[rnd1]+"の"+data[rnd2]+"\n";
 	  	}else if(no<3 && data[rnd1].length + data[rnd2].length < 5){
